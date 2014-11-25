@@ -1,0 +1,26 @@
+{
+  "name": "LudumVitae_20151125mst",
+  "version": "0.1.0",
+  "devDependencies": {
+    "grunt": "~0.4.5"
+  },
+  "description": "\"A first bash crack hack at making a dream happen\"",
+  "main": "Gruntfile.js",
+  "scripts": {
+    "test": "node server.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/chuckwilliams37/LudumVitae_0.1_20141125_1548.git"
+  },
+  "keywords": [
+    "Ludum",
+    "Vitae"
+  ],
+  "author": "Charles C. Williams, Jr",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/chuckwilliams37/LudumVitae_0.1_20141125_1548/issues"
+  },
+  "homepage": "https://github.com/chuckwilliams37/LudumVitae_0.1_20141125_1548"
+}
