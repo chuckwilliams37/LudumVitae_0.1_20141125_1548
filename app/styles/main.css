@@ -1,0 +1,43 @@
+body {
+  padding: 5px 5px 5px 5px;
+  background-color: #e6e3ac;
+}
+.header,
+.marketing,
+.footer {
+  padding-left: 15px;
+  padding-right: 15px;
+}
+.header {
+  border-bottom: 1px solid #002f2f;
+  margin-bottom: 30px;
+  background-color: #e6e2af;
+}
+.header h3 {
+  margin-top: 0;
+  margin-bottom: 0;
+  line-height: 40px;
+  padding-bottom: 19px;
+  color: #046280;
+}
+.footer {
+  padding-top: 19px;
+  color: #777;
+  border-top: 1px solid #e5e5e5;
+}
+@media (min-width: 768px) {
+  .container {
+    background-color: #efebca;
+  }
+}
+@media screen and (min-width: 768px) {
+  .header,
+  .marketing,
+  .footer {
+    padding-left: 0;
+    padding-right: 0;
+  }
+}
+.container {
+  border: 1px solid #002f2f;
+}
