@@ -1,6 +1,9 @@
 header New Soul
 form#new_soul
   label Soul Identification
-  input#name
+  input(ng-model="newSoul.name")
+  input(ng-model="newSoul.email")
+  input(ng-model="newSoul.phone")
   footer
-    input.btn.btn-default(type="submit",value=" Send through the Ether")
+    button.btn.btn-default(ng-click="$close(newSoul)") Send through the Ether
+    button.btn.btn-default(ng-click="$dismiss('not created')") Cancel

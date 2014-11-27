@@ -21,4 +21,6 @@ angular
       .otherwise({
         redirectTo: '/home'
       });
+    RestangularProvider.setBaseUrl('https://api.mongolab.com/api/1/databases/ludumvitae_20141125/collections');
+    RestangularProvider.setDefaultRequestParams({ apiKey: 'JS9E_uVFN0H-UCgAX-yFbhyzmyLSjsR5' })
   });

@@ -12,8 +12,13 @@
 var  express = require('express')
   ,stylus = require('stylus')
   ,nib = require('nib')
+  ,https = require('https')
 ;
-  
+
+
+
+
+
 var app = express();
 
 function compile (str, path){
@@ -34,6 +39,48 @@ app.use('/styles',express.static(__dirname+'/app/styles'));
 app.use('/scripts',express.static(__dirname+'/app/scripts'));
 app.use('/images',express.static(__dirname+'/app/images'));
 app.use('/bower_components',express.static(__dirname+'/app/bower_components'));
+
+/*
+
+MongoLabConnection
+
+*/
+
+
+
+// var getIsaaSessionToken = function () {
+//   console.log('getIsaaSessionToken()');
+//   var encodedKey = "NDQ2OjZhMjJmODUzN2EyMWNlNTAyNjc1ODM3MDg5OWNiMjJl"
+//     ,headers = {
+//       "Authorization" : "Basic " + encodedKey   
+//     },
+//     options = {
+//       host : "oauth.isaacloud.com",
+//       method : 'POST',
+//       path : "/token",
+//       headers : headers
+//     },
+//     req = https.request( options, function (res){
+//       console.log('STATUS: ' + res.statusCode);
+//       console.log('HEADERS: ' + JSON.stringify(res.headers));
+//       res.setEncoding('utf8');
+//       res.on('data',function ( chunk ) {
+//         console.log ("isaac response: " , chunk );
+//       });
+//     })
+//   ;
+//   req.write(JSON.stringify({'grant_type':'client_credentials'}));
+//   req.on('error', function(e) {
+//     console.log('problem with request: ' + e.message, e);
+//   });
+//   req.end();
+  
+// };
+
+/**************************************************************************************/
+
+
+
 
 app.get('/', function (req, res){
   res.render('index',
